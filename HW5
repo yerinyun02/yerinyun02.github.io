@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Create an HTML button that 
+        acts like a link 
+    </title> 
+    <!-- Style to create button -->
+    <style> 
+        .GFG { 
+           width:100px;
+           height:50px;
+           background:green;
+           border:none;
+           color:white;
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>The Data</h1> 
+    <!-- Adding link to the button on the onclick event -->
+      <form action="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/licenses_fall2022.csv">
+        <button type="submit" class="GFG">The Data</button>
+       </form>
+</body> 
+</html>
