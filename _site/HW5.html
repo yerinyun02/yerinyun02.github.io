@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+  <h1>Visualizations</h1>
+
+  <div id="vis1"></div>
+  <hr> <div id="vis2"></div>
+
+  <script>
+      
+    // First Chart
+    var spec1 = "https://raw.githubusercontent.com/yerinyun02/yerinyun02.github.io/main/licenses_plot1.json";
+    vegaEmbed('#vis1', spec1);
+
+    // Second Chart
+    var spec2 = "https://raw.githubusercontent.com/yerinyun02/yerinyun02.github.io/main/licenses_plot2.json";
+    vegaEmbed('#vis2', spec2);
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Create an HTML button that 
+        acts like a link 
+    </title> 
+    <!-- Style to create button -->
+    <style> 
+        .GFG { 
+           width:100px;
+           height:50px;
+           background:green;
+           border:none;
+           color:white;
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>License Dataset</h1> 
+    <!-- Adding link to the button on the onclick event -->
+      <form action="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/licenses_fall2022.csv">
+        <button type="submit" class="GFG">The Data</button>
+       </form>
+</body> 
+</html>
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Create an HTML button that 
+        acts like a link 
+    </title> 
+    <!-- Style to create button -->
+    <style> 
+        .GFG { 
+           width:100px;
+           height:50px;
+           background:green;
+           border:none;
+           color:white;
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>The Analysis on Data Visualization Interactivity</h1> 
+    <!-- Adding link to the button on the onclick event -->
+      <form action="https://github.com/yerinyun02/yerinyun02.github.io/blob/main/Workbook%20(8).ipynb">
+        <button type="submit" class="GFG">The Analysis</button>
+       </form>
+</body> 
+</html>
