@@ -10,8 +10,43 @@
   <h1>Visualizations</h1>
 
   <div id="vis1"></div>
+
+    <h2>Plot 1: Top 10 License Types</h2>
+  <p>
+    This bar chart visualizes the ten most frequently occurring professional license types in the dataset.
+    The x-axis uses a nominal encoding for the license type name, while the y-axis uses a quantitative
+    encoding for the count of licenses in each category. Color is applied using a conditional mapping
+    based on the nominal License Type field: when the chart first renders, "DETECTIVE BOARD" is selected
+    by default and all bars appear in their distinct categorical colors. Once a user selects a specific
+    license type from the dropdown, that bar retains its color while all others shift to light gray.
+    This conditional color mapping, implemented with alt.condition(), keeps visual focus on the selected
+    category and reduces distraction from the rest. For data transformation, value_counts() was used to
+    count occurrences per license type, .head(10) filtered down to the top ten, and reset_index()
+    converted the result into a DataFrame with named columns that Altair can reference.
+  </p>
+
+
   <hr> <div id="vis2"></div>
 
+  <h2>Plot 2: License Distribution</h2>
+  <p>
+    The second visualization similarly explores the license dataset using the same interactive dropdown
+    and conditional highlight pattern. The encoding choices and color scheme follow the same logic as
+    Plot 1 — a nominal variable drives color, and a quantitative measure drives the position of marks —
+    allowing users to make focused comparisons by selecting a category of interest. Data transformations
+    applied in the Python notebook, such as filtering or grouping, are described in the analysis notebook.
+  </p>
+
+    <h2>Interactivity</h2>
+  <p>
+    Both plots include an interactive dropdown menu built with alt.selection_point and alt.binding_select,
+    allowing users to highlight a specific license type. When a selection is made, the chosen bar is
+    emphasized in its categorical color while all others fade to light gray, making it easy to focus on
+    one category at a time. Tooltip interactivity is also included — hovering over any bar displays the
+    license type and its count, providing detail on demand without cluttering the chart. This combination
+    of dropdown selection and tooltip makes the visualizations more informative and easier to explore.
+  </p>
+  
   <script>
       
     // First Chart
